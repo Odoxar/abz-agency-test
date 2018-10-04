@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 @import "./theme.scss";
 @import "./variables.scss";
 html,
@@ -143,13 +142,14 @@ body {
 
 .btn {
   background-color: transparent;
+  text-align: center;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 .h1 {
-  font-family: Overpass;
+  font-family: $overpass-font;
   font-size: 1.875em;
   font-weight: 600;
   line-height: 1.133;
@@ -157,7 +157,28 @@ body {
 }
 
 .p1 {
-  font-size: 1em;
   line-height: 1.375;
   text-align: center;
+
+}
+
+.sign-up__btn {
+  display: block;
+  width: 289px;
+  height: 40px;
+  border-radius: 4px;
+  font-family: $pt-sans-font;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: darken($white-color, 0.39);
+  background-color: $primary-color;
+  transition: $opacity ease-in;
+  box-shadow: none;
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+}
+
+.main {
+  padding-top: 70px;
 }

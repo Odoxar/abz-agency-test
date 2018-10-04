@@ -1,15 +1,20 @@
 @import "../../variables.scss";
-
 .banner {
-  height: 393px;
+  //height: 393px;
+  padding: 67px 15px 70px;
   background-image: url('../../assets/imgs/bg-1.jpg');
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
   &__title {
     color: $white-color;
+    margin-bottom: 12px;
   }
   &__description {
     @extend .banner__title;
+    margin-bottom: 38px;
+  }
+  &__sign-up_btn {
+    margin: 0 auto;
   }
 }
