@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.banner {
+  height: 393px;
+  background-image: url('../../assets/imgs/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+  &__title {
+    color: $white-color;
+  }
+  &__description {
+    @extend .banner__title;
+  }
+}

@@ -4,9 +4,12 @@ $primary-hover-color: lighten(desaturate($primary-color, 2.64), 8.63);
 $primary-hover-bg-color: rgba($primary-hover-color, 0.2);
 $secondary-color: rgb(40, 53, 147);
 $disabled-color: rgb(215, 215, 215);
-$bg-color: rgb(255, 255, 255);
+$white-color: rgb(255, 255, 255);
+$black-color: rgb(0, 0, 0);
 // font
 $pt-sans-font: 'PT Sans',
 sans-serif;
 $overpass-font: 'Overpass',
 sans-serif;
+
+$opacity: 0.2s;
