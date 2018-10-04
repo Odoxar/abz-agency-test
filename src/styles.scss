@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./variables.scss";
+.heading1 {
+  font-family: $pt-sans-font;
+  color: $primary-color;
+}
+
+h2 {
+  color: $primary-hover-color;
+}
+
+div {
+  background: $primary-hover-bg-color;
+}
