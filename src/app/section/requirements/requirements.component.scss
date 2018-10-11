@@ -1,0 +1,25 @@
+@import "../../../variables.scss";
+.requirements {
+  padding: 66px 15px;
+  background-image: url('../../../assets/imgs/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  //height: 1031px;
+  &__title {
+    color: $white-color;
+    line-height: 1.2;
+    margin-bottom: 26px;
+  }
+  &__description {
+    color: darken($white-color, 0.39);
+    margin-bottom: 22px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__image {
+    height: 216px;
+    margin-bottom: 22px;
+  }
+}

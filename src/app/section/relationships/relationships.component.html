@@ -1,0 +1,13 @@
+<section class="main relationships">
+  <h2 class="h2 relationships__title">About my relationships with web-development</h2>
+  <div class="wrap">
+    <div
+      class="relationships__item"
+      *ngFor="let item of items"
+    >
+      <img [src]="'../../../assets/imgs/' + item.image + '.svg'" [alt]="item.image" [ngClass]="{'relationships__img_js': item.image === 'javascript'}" class="relationships__img">
+      <h4 class="h4 relationships__subtitle">{{item.title}}</h4>
+      <p class="p2 relationships__description">{{item.description}}</p>
+    </div>
+  </div>
+</section>

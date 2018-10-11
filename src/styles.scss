@@ -141,44 +141,66 @@ body {
 }
 
 .btn {
+  font-family: $pt-sans-font;
+  font-weight: 700;
   background-color: transparent;
   text-align: center;
   border: none;
   outline: none;
   cursor: pointer;
+  height: 40px;
+}
+
+.h1,
+.h2,
+.h4 {
+  font-family: $overpass-font;
+  font-weight: 600;
+  color: $black-color;
 }
 
 .h1 {
-  font-family: $overpass-font;
   font-size: 1.875em;
-  font-weight: 600;
-  line-height: 1.133;
-  text-align: center;
+  line-height: 1.136;
 }
 
-.p1 {
+.h2 {
+  font-size: 1.625em;
+  line-height: 1.923;
+}
+
+.h4 {
+  font-size: 1.375em;
+  line-height: 27px;
+}
+
+.p2,
+.p3 {
+  color: $black-color-description;
+}
+
+.p2 {
   line-height: 1.375;
-  text-align: center;
-
 }
 
-.sign-up__btn {
-  display: block;
-  width: 289px;
-  height: 40px;
-  border-radius: 4px;
-  font-family: $pt-sans-font;
-  font-size: 1.25em;
-  font-weight: 700;
-  color: darken($white-color, 0.39);
-  background-color: $primary-color;
-  transition: $opacity ease-in;
-  box-shadow: none;
-  &:hover {
-    background-color: $primary-hover-color;
+.p3 {
+  font-size: 0.875em;
+}
+
+  .sign-up__btn {
+    display: block;
+    width: 289px;
+    border-radius: 4px;
+    font-size: 1.25em;
+    color: darken($white-color, 0.39);
+    background-color: $primary-color;
+    transition: $opacity ease-in;
+    box-shadow: none;
+    &:hover {
+      background-color: $hover-color;
+    }
   }
-}
-
-.main {
-  padding-top: 70px;
-}
+  .main {
+    padding: 58px 14px 0;
+    text-align: center;
+  }

@@ -1,15 +1,16 @@
 // colors
-$primary-color: rgb(239, 108, 0);
-$primary-hover-color: lighten(desaturate($primary-color, 2.64), 8.63);
-$primary-hover-bg-color: rgba($primary-hover-color, 0.2);
+$primary-color: rgb(239, 108, 0); //#ef6c00
+$hover-color: lighten(desaturate(adjust-hue($primary-color, -1), 2.68), 9.22); //#FC8222
+$btn-bg-hover-color: rgba($hover-color, 0.2); //rgba(#fc831f, 0.2)
+$btn-text-color: lighten(desaturate(adjust-hue($primary-color, -2), 11.16), 2.35); // #ed6b0e
 $secondary-color: rgb(40, 53, 147);
 $disabled-color: rgb(215, 215, 215);
 $white-color: rgb(255, 255, 255);
 $black-color: rgb(0, 0, 0);
+$black-color-description: lighten(saturate($black-color, 0.66), 29.61);
 // font
 $pt-sans-font: 'PT Sans',
 sans-serif;
 $overpass-font: 'Overpass',
 sans-serif;
-
 $opacity: 0.2s;

@@ -6,12 +6,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
+import { AboutMeComponent } from './section/about-me/about-me.component';
+import { RelationshipsComponent } from './section/relationships/relationships.component';
+import { RequirementsComponent } from './section/requirements/requirements.component';
+import { UsersComponent } from './section/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    AboutMeComponent,
+    RelationshipsComponent,
+    RequirementsComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

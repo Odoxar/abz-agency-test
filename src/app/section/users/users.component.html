@@ -1,0 +1,18 @@
+<section class="main users">
+  <h2 class="h2 users__title">Our cheerful users</h2>
+  <p class="p2 users__subtitle">
+    Attention! Sorting users by registration date
+  </p>
+  <div class="users__wrap" *ngFor="let user of users">
+    <div class="users__item user">
+      <img [src]="'../../../assets/imgs/' + user.photo" alt="user.photo" class="user__image">
+      <h4 class="h4 user__name">{{user.name}}</h4>
+      <div class="user__description">
+        <p class="p3 user__info user__position">{{user.position}}</p>
+        <p class="p3 user__info user__email">{{user.email}}</p>
+        <p class="p3 user__info user__phone">{{user.phone}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn users__btn">Show more</button>
+</section>

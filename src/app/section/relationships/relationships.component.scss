@@ -1,0 +1,23 @@
+.relationships {
+  padding: 61px 15px 69px 16px;
+  &__item {
+    margin-bottom: 29px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-bottom: 10px;
+    height: 99px;
+    &_js {
+      height: 105px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 1px;
+  }
+}
