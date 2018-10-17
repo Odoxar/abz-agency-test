@@ -18,3 +18,22 @@
     margin: 0 auto;
   }
 }
+
+.sign-up__btn {
+  display: block;
+  width: 290px;
+  border-radius: 4px;
+  font-size: 1.25em;
+  color: darken($white-color, 0.39);
+  background-color: $primary-color;
+  transition: $speed ease-in;
+  box-shadow: none;
+  &:hover {
+    background-color: $hover-color;
+  }
+  &[disabled] {
+    background-color: #d7d7d7;
+    color: #8d8c8c;
+    cursor: inherit;
+  }
+}

@@ -1,0 +1,38 @@
+<footer class="footer">
+  <div class="footer_left">
+    <div class="footer__logo">
+      <a href="#" class="footer__logo_link">
+        <app-logo [css]="'footer'"></app-logo>
+      </a>
+    </div>
+    <div class="footer__list_wrap">
+      <ul class="footer__list">
+        <li class="footer__item" *ngFor="let item of sectionLink">
+          <a [href]="item.link" class="footer__link">{{item.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_right">
+    <div class="footer__contact-info">
+      <ul class="footer__list">
+        <li class="footer__item contact-info__item" *ngFor="let item of contactInfo">
+          {{item.value}}
+        </li>
+      </ul>
+    </div>
+    <div class="footer__list_wrap social">
+      <ul class="footer__list social__list">
+        <li
+          class="footer__item social__item"
+          *ngFor="let item of socialInfo"
+        >
+          <a [href]="item.link" class="footer__link social__link">
+            <app-icon [content]="item.content"></app-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copyright">© abz.agency specially for the test task</div>
+  </div>
+</footer>

@@ -18,7 +18,7 @@
       border-color: #ec6b0e;
       border-style: solid;
       box-sizing: border-box;
-      transition: $opacity ease-in;
+      transition: $speed ease-in;
       &:hover {
         background-color: $btn-bg-hover-color;
         color: $hover-color;

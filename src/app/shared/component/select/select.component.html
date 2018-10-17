@@ -1,0 +1,19 @@
+<div class="select" (click)="dropdownToggle()" (clickOutside)="dropdownOutside()">
+  <input
+    type="text"
+    disabled
+    class="select__input"
+    placeholder="Select your position"
+    [value]="inputValue"
+  >
+  <ul class="select__dropdown" *ngIf="dropdownState" >
+    <li
+      class="select__item"
+    *ngFor="let item of items"
+    (click)="selectedItem(item)"
+    [ngClass]="{'select__item_selected': highlightItem(item)}"
+    >
+      {{item.value}}
+    </li>
+  </ul>
+</div>

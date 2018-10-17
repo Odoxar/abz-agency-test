@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+.footer {
+  background-color: $secondary-color;
+  height: 458px;
+  color: $white-color;
+  text-align: center;
+  &_left {
+    border-bottom: 1px solid #5873b7;
+    width: 100%;
+    padding: 31px 15px 30px;
+    box-sizing: border-box;
+  }
+  &_right {
+    width: 100%;
+    padding: 29px 15px 30px;
+    box-sizing: border-box;
+  }
+  &__logo {
+    margin-bottom: 15px;
+    &_link {
+      display: block;
+      width: 134px;
+      height: 24px;
+      margin: 0 auto;
+
+    }
+  }
+  &__link {
+    color: $white-color;
+    display: block;
+    line-height: 1.55;
+    text-decoration: none;
+    transition: $speed ease-in;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.contact-info__item {
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}

@@ -9,8 +9,8 @@ $white-color: rgb(255, 255, 255);
 $black-color: rgb(0, 0, 0);
 $black-color-description: lighten(saturate($black-color, 0.66), 29.61);
 // font
-$pt-sans-font: 'Source Sans Pro',
+$main-font: 'Source Sans Pro',
 sans-serif;
-$overpass-font: 'Overpass',
+$heading-font: 'Overpass',
 sans-serif;
-$opacity: 0.2s;
+$speed: 0.2s;

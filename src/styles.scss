@@ -129,7 +129,7 @@ table {
 
 body {
   line-height: 1;
-  font-family: $pt-sans-font;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 16px;
   color: $black-color;
@@ -141,7 +141,7 @@ body {
 }
 
 .btn {
-  font-family: $pt-sans-font;
+  font-family: $main-font;
   font-weight: 700;
   background-color: transparent;
   text-align: center;
@@ -155,7 +155,7 @@ body {
 .h1,
 .h2,
 .h4 {
-  font-family: $overpass-font;
+  font-family: $heading-font;
   font-weight: 600;
   color: $black-color;
 }
@@ -188,20 +188,9 @@ body {
   font-size: 0.875em;
 }
 
-  .sign-up__btn {
-    display: block;
-    width: 289px;
-    border-radius: 4px;
-    font-size: 1.25em;
-    color: darken($white-color, 0.39);
-    background-color: $primary-color;
-    transition: $opacity ease-in;
-    box-shadow: none;
-    &:hover {
-      background-color: $hover-color;
-    }
-  }
-  .main {
-    padding: 58px 14px 0;
-    text-align: center;
-  }
+.main {
+  padding: 58px 14px 0;
+  text-align: center;
+}
+
+

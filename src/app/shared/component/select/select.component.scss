@@ -1,0 +1,48 @@
+@import "../../../../variables.scss";
+.select {
+  &__input {
+    @extend .extend;
+    height: 54px;
+    padding-bottom: 3px;
+    color: $black-color;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../../../assets/icons/caret-down.svg');
+    background-repeat: no-repeat;
+    background-position: 260px 23px;
+    &::placeholder {
+      color: $black-color;
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    top: 0;
+    background-color: $white-color;
+    border-radius: 3px;
+    box-shadow: 1px 3px 8px 0px rgba(1, 1, 1, 0.24);
+  }
+  &__item {
+    @extend .extend;
+    height: 47px;
+    line-height: 47px;
+    color: #393939;
+    text-align: left;
+    transition: $speed ease-in;
+    cursor: pointer;
+    &_selected {
+      color: $primary-color;
+    }
+    &:hover {
+      background-color: rgba($primary-color, 0.2);
+    }
+  }
+}
+
+.extend {
+  width: 288px;
+  padding-left: 17px;
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-size: 1em;
+}

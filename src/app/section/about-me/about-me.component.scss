@@ -33,7 +33,7 @@
   color: $btn-text-color; // #ed6b0e;
   font-size: 1.375em;
   width: 100%;
-  transition: $opacity ease-in;
+  transition: $speed ease-in;
   &:hover {
     color: $hover-color;
   }

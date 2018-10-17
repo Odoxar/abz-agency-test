@@ -5,25 +5,57 @@
     update the list of users in the block from the top
   </p>
   <form class="sign-up__form form">
-    <fieldset class="form__fieldset form__row">
-      <legend class="form__row_title">Name</legend>
-      <input class="form__input " type="text">
-    </fieldset>
+    <div class="form__row">
+      <div class="form__field">
+        <label for="inputName" class="form__field_title label" >Name</label>
+        <input id="inputName" class="form__input" type="text" placeholder="Your name">
+      </div>
+      <span class="form__info"></span>
+    </div>
 
-    <fieldset class="form__fieldset form__row">
-      <legend class="form__row_title">Email</legend>
-      <input class="form__input " type="text">
-    </fieldset>
+    <div class="form__row form__row_email">
+      <div class="form__field">
+        <label for="inputEmail" class="form__field_title " >Email</label>
+        <input id="inputEmail" class="form__input " placeholder="Your email" type="email">
+      </div>
+      <span class="form__info"></span>
+    </div>
 
-    <fieldset class="form__fieldset form__row">
-      <legend class="form__row_title">Phone</legend>
-      <input class="form__input "type="number">
-    </fieldset>
-    <select class="form__select form__row" placeholder="Select your position">
+    <div class="form__row">
+      <div class="form__field">
+        <label for="inputPhone" class="form__field_title" >Phone</label>
+        <input
+          id="inputPhone"
+          class="form__input"
+          type='text'
+          prefix="+38 "
+          mask="(___) ___ __ __"
+          [showMaskTyped]="true"
+          placeholder="+38 (___) ___ __ __"
+        >
+      </div>
+      <span class="form__info"></span>
+    </div>
+    <div class="form__row">
+      <div class="form__field">
+        <app-select></app-select>
+      </div>
+    </div>
 
-      <option value="1">1</option>
-      <option value="1">1</option>
-      <option value="1">1</option>
-    </select>
+    <div class="form__row">
+      <div class="form__field">
+        <label for="inputFile" class="form__input form__label_file">
+          <span class="form__label_placeholder">Upload your photo</span>
+          <i class="form__label_icon"></i>
+        </label>
+        <input id="inputFile" type="file" class="form__input_file">
+      </div>
+      <span class="form__info">File format jpg up to 5 MB, the minimum size
+        of 70x70px</span>
+    </div>
+
+    <div class="form__row">
+        <button type="submit" class="btn form__btn" disabled >Sign Up</button>
+    </div>
   </form>
 </section>
