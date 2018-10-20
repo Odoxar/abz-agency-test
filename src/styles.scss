@@ -154,6 +154,7 @@ body {
 
 .h1,
 .h2,
+.h3,
 .h4 {
   font-family: $heading-font;
   font-weight: 600;
@@ -168,16 +169,46 @@ body {
 .h2 {
   font-size: 1.625em;
   line-height: 1.923;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    padding: 0 60px;
+  }
 }
 
+.h1,
+.h2 {
+  @media screen and (min-width: $tablet) {
+    font-size: 2.625em;
+    line-height: 1.2;
+  }
+}
+
+.h3,
 .h4 {
   font-size: 1.375em;
-  line-height: 27px;
+  line-height: 26px;
+}
+
+.h3 {
+  @media screen and (min-width: $tablet) {
+    font-size: 1.625em;
+    line-height: 1;
+  }
 }
 
 .p2,
 .p3 {
   color: $black-color-description;
+}
+
+.p1 {
+  line-height: 1.4;
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+    margin: 0 auto 35px;
+    font-size: 1.125em;
+    line-height: 1.2;
+  }
 }
 
 .p2 {
@@ -186,11 +217,34 @@ body {
 
 .p3 {
   font-size: 0.875em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    line-height: 1.25;
+  }
 }
 
 .main {
   padding: 58px 14px 0;
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+    padding: 114px 25px 120px;
+  }
 }
 
-
+.tablet {
+  &_smaller {
+    display: block;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+  &_bigger {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+}

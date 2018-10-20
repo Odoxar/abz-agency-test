@@ -1,6 +1,6 @@
 <section class="main sign-up">
   <h2 class="h2 sign-up__title">Register to get a work</h2>
-  <p class="p2 sign-up__subtitle">
+  <p class="p1 sign-up__subtitle">
     Attention! After successful registration and alert,
     update the list of users in the block from the top
   </p>
@@ -8,7 +8,7 @@
     <div class="form__row">
       <div class="form__field">
         <label for="inputName" class="form__field_title label" >Name</label>
-        <input id="inputName" class="form__input" type="text" placeholder="Your name">
+        <input id="inputName" class="form__input form__input_small" type="text" placeholder="Your name">
       </div>
       <span class="form__info"></span>
     </div>
@@ -16,7 +16,7 @@
     <div class="form__row form__row_email">
       <div class="form__field">
         <label for="inputEmail" class="form__field_title " >Email</label>
-        <input id="inputEmail" class="form__input " placeholder="Your email" type="email">
+        <input id="inputEmail" class="form__input form__input_small" placeholder="Your email" type="email">
       </div>
       <span class="form__info"></span>
     </div>
@@ -26,7 +26,7 @@
         <label for="inputPhone" class="form__field_title" >Phone</label>
         <input
           id="inputPhone"
-          class="form__input"
+          class="form__input form__input_small"
           type='text'
           prefix="+38 "
           mask="(___) ___ __ __"
@@ -44,9 +44,12 @@
 
     <div class="form__row">
       <div class="form__field">
-        <label for="inputFile" class="form__input form__label_file">
+        <label for="inputFile" class="form__input form__input_big form__label_file">
           <span class="form__label_placeholder">Upload your photo</span>
-          <i class="form__label_icon"></i>
+          <div class="upload__btn">
+            <span class="upload__btn_name tablet_bigger">upload</span>
+            <i class="form__label_icon tablet_smaller"></i>
+          </div>
         </label>
         <input id="inputFile" type="file" class="form__input_file">
       </div>
@@ -54,7 +57,7 @@
         of 70x70px</span>
     </div>
 
-    <div class="form__row">
+    <div class="form__row form__row_btn">
         <button type="submit" class="btn form__btn" disabled >Sign Up</button>
     </div>
   </form>

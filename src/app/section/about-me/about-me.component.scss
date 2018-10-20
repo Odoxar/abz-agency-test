@@ -2,14 +2,24 @@
 .about-me {
   &__title {
     margin-bottom: 17px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 44px;
+    }
     &_sub {
       padding: 0 15px;
-      margin-bottom: 11px;
+      margin-bottom: 12px;
+      @media screen and (min-width: $tablet) {
+        padding: 0;
+        margin-bottom: 13px;
+      }
     }
   }
   &__image {
     height: 216px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      margin: 0px 29px 0px 0;
+    }
   }
   &__content {
     &_wrap {
@@ -17,6 +27,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
   }
   &__description {
@@ -25,7 +39,13 @@
     }
     &:last-of-type {
       margin-bottom: 8px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 13px;
+      }
     }
+  }
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 68px;
   }
 }
 
@@ -36,5 +56,9 @@
   transition: $speed ease-in;
   &:hover {
     color: $hover-color;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 75px;
+    padding: 0;
   }
 }

@@ -5,7 +5,7 @@ export interface StyleGuide {
   optionsClass?: string
 }
 
-export interface SectionLink {
+export interface Link {
   name: string;
   link: string;
 }

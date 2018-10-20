@@ -45,5 +45,26 @@ const users = [
     position: "Lead designer",
     email: "liamgrievescasey@example.com",
     phone: "+38 (050) 273 93 32"
+  },
+  {
+    photo: "user-elizabeth-2x.jpg",
+    name: "Elizabeth",
+    position: "Frontend developer",
+    email: "elisabet.frontend@gmail.com",
+    phone: "+38 (095) 924 66 37"
+  },
+  {
+    photo: "user-alexander-2x.jpg",
+    name: "Alexander",
+    position: "Backend developer",
+    email: "alexander.backend@gmail.com",
+    phone: "+38 (050) 789 24 09"
+  },
+  {
+    photo: "user-mason-2x.jpg",
+    name: "Mason",
+    position: "QA",
+    email: "mason.qa@gmail.com",
+    phone: "+38 (095) 283 27 00"
   }
 ];

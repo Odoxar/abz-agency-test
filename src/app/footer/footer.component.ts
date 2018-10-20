@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionLink, ContactInfo, SocialLink } from '../shared/model/models.model';
+import { Link, ContactInfo, SocialLink } from '../shared/model/models.model';
 
 @Component({
   selector: "app-footer",
@@ -7,9 +7,10 @@ import { SectionLink, ContactInfo, SocialLink } from '../shared/model/models.mod
   styleUrls: ["./footer.component.scss"]
 })
 export class FooterComponent implements OnInit {
-  public sectionLink: SectionLink[];
+  public sectionLink: Link[];
   public contactInfo: ContactInfo[];
   public socialInfo: SocialLink[];
+  public linksFooter: Link[];
 
   constructor() {
     this.socialInfo = socials;
@@ -18,11 +19,11 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
     this.sectionLink = links;
     this.contactInfo = contacts;
-
+    this.linksFooter = linksFooter;
   }
 }
 
-const links: SectionLink[] = [
+const links: Link[] = [
   {
     name: "About me",
     link: "#"
@@ -59,6 +60,25 @@ const contacts: ContactInfo[] = [
     key: "phone"
   }
 ];
+
+const linksFooter: Link[] = [
+  { name: 'News', link: '#' },
+  { name: 'Blog', link: '#' },
+  { name: 'Partners', link: '#' },
+  { name: 'Shop', link: '#' },
+  { name: 'Overview', link: '#' },
+  { name: 'Design', link: '#' },
+  { name: 'Code', link: '#' },
+  { name: 'Collaborate', link: '#' },
+  { name: 'Tutorials', link: '#' },
+  { name: 'Resources', link: '#' },
+  { name: 'Guides', link: '#' },
+  { name: 'Examples', link: '#' },
+  { name: 'FAQ', link: '#' },
+  { name: 'Terms', link: '#' },
+  { name: 'Conditions', link: '#' },
+  { name: 'Help', link: '#' }
+]
 
 const socials: SocialLink[] = [
   {

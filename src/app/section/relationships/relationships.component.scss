@@ -1,3 +1,4 @@
+@import "../../../variables.scss";
 .relationships {
   padding: 61px 15px 69px 16px;
   &__item {
@@ -5,19 +6,44 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+    &_wrap {
+      @media screen and (min-width: $tablet) {
+        width: 65%;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 41px;
+    }
   }
   &__title {
     line-height: 1.2;
     margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 45px;
+    }
   }
   &__img {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     height: 99px;
     &_js {
       height: 105px;
+      @media screen and (min-width: $tablet) {
+        height: 102px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      margin: 0 37px 10px 10px;
     }
   }
   &__subtitle {
     margin-bottom: 1px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 7px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 61px 15px 112px 16px;
   }
 }

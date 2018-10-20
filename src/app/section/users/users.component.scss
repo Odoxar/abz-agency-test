@@ -1,13 +1,29 @@
 @import "../../../variables.scss";
 .user {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   &s {
+    &__wrap {
+      margin-bottom: 37px;
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+    }
     &__title {
       margin-bottom: 4px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 13px;
+      }
     }
     &__subtitle {
-      color: $black-color;
-      margin: 0 60px 30px;
+
+      padding: 0 60px 30px;
+      @media screen and (min-width: $tablet) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
     }
     &__btn {
       width: 290px;
@@ -24,17 +40,45 @@
         color: $hover-color;
       }
     }
+    @media screen and (min-width: $tablet) {
+      padding: 114px 15px 21px;
+      text-align: center;
+    }
   }
   &__image {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 14px;
+    }
   }
   &__name {
     margin: 0 30px 5px;
+    @media screen and (min-width: $tablet) {
+      margin: 0 5px 4px;
+      text-align: center;
+    }
   }
   &__info {
     margin-bottom: 5px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 3px;
+    }
+  }
+  &__email {
+    white-space: nowrap;
+    @media screen and (min-width: $tablet) {
+      width: 200px;
+      margin: 0 auto 2px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 238px;
+    margin-bottom: 38px;
   }
 }

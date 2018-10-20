@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 .header {
   justify-content: space-between;
   height: 64px;
@@ -5,13 +6,15 @@
   z-index: 2;
   padding: 0;
   background-color: transparent;
+
   &__link {
     display: block;
     width: 134px;
     height: 24px;
     margin-left: 17px;
-    /*background-image: url('../../assets/logo/logo1.svg');
-    background-repeat: no-repeat; */
+    @media screen and (min-width: $tablet) {
+      margin-left: 24px;
+    }
   }
   &__sidenav_btn {
     width: 54px;
@@ -19,5 +22,8 @@
     background-image: url('../../assets/icons/line-menu.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    @media screen and (min-width: $tablet) {
+      margin-right: 9px;
+    }
   }
 }
