@@ -1,0 +1,8 @@
+<mat-card class="login">
+  <button *ngIf="!queryLogin" class="btn login__btn"><app-svg-sign-out></app-svg-sign-out></button>
+  <img mat-card-avatar class="login__image" [src]="'../../../../assets/imgs/' + item.image">
+  <mat-card-content class="login__description">
+    <mat-card-title class="login__name">{{item.name}}</mat-card-title>
+    <mat-card-subtitle class="login__email">{{item.email}}</mat-card-subtitle>
+  </mat-card-content>
+</mat-card>

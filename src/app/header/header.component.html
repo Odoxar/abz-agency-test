@@ -1,8 +1,14 @@
-<mat-toolbar class="header">
-  <a href="#" class="header__link">
-    <app-logo></app-logo>
-  </a>
+<div class="wrap">
+  <mat-toolbar class="header">
+    <a href="#" class="header__link">
+      <app-logo></app-logo>
+    </a>
 
-  <button class="header__sidenav_btn btn" >
-  </button>
-</mat-toolbar>
+    <app-menu *ngIf="!mobileQuery.matches" ></app-menu>
+
+    <app-login *ngIf="!mobileQuery.matches"></app-login>
+
+    <button class="header__sidenav_btn btn" *ngIf="mobileQuery.matches" (click)="sidenavOpened()">
+    </button>
+  </mat-toolbar>
+</div>

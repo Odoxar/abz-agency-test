@@ -164,22 +164,30 @@ body {
 .h1 {
   font-size: 1.875em;
   line-height: 1.136;
+  @media screen and (min-width: $tablet) {
+    font-size: 2.625em;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 3.125em;
+    line-height: 1.2;
+  }
 }
 
 .h2 {
   font-size: 1.625em;
   line-height: 1.923;
   @media screen and (min-width: $tablet) {
+    font-size: 2.625em;
+    line-height: 1.2;
     text-align: center;
     padding: 0 60px;
   }
-}
-
-.h1,
-.h2 {
-  @media screen and (min-width: $tablet) {
-    font-size: 2.625em;
-    line-height: 1.2;
+  @media screen and (min-width: $desktop) {
+    padding: 0 160px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding: 0 260px;
   }
 }
 
@@ -204,10 +212,13 @@ body {
 .p1 {
   line-height: 1.4;
   @media screen and (min-width: $tablet) {
-    width: 360px;
+    width: 385px;
     margin: 0 auto 35px;
     font-size: 1.125em;
     line-height: 1.2;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
   }
 }
 
@@ -230,21 +241,81 @@ body {
   text-align: center;
   @media screen and (min-width: $tablet) {
     text-align: left;
-    padding: 114px 25px 120px;
+    padding: 114px 24px 120px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 135px 25px 120px;
   }
 }
 
 .tablet {
   &_smaller {
     display: block;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
       display: none;
     }
   }
   &_bigger {
     display: none;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
       display: block;
     }
   }
+}
+
+.desktop {
+  &_bigger {
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+  &_smaller {
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.wrap {
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 935px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    max-width: 1145px;
+  }
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
+
+.mat-nav-list .mat-list-item {
+  height: 44px;
+  &:hover {
+    color: $primary-color;
+    background: none !important;
+  }
+  & .mat-list-item-content {
+    padding: 0 15px !important;
+    @media screen and (min-width: $tablet) {
+      padding: 0 24px !important;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0 15px !important;
+    }
+    @media screen and (min-width: $desktop-2k) {
+      padding: 0 14px !important;
+    }
+  }
+}
+
+.devider {
+  height: 1px;
+  background-color: #5873b7;
+  width: 100%;
+  position: absolute;
 }

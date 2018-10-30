@@ -17,6 +17,8 @@ import { SignUpComponent } from './section/sign-up/sign-up.component';
 import { SelectComponent } from './shared/component/select/select.component';
 import { FooterComponent } from './footer/footer.component';
 import { SvgModule } from './shared/svg/svg.module';
+import { MenuComponent } from './shared/component/menu/menu.component';
+import { LoginComponent } from "./shared/component/login/login.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SvgModule } from './shared/svg/svg.module';
     UsersComponent,
     SignUpComponent,
     SelectComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,6 @@ import { SvgModule } from './shared/svg/svg.module';
     ClickOutsideModule,
     SvgModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

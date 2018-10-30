@@ -2,21 +2,31 @@
 @import '../banner/banner.component.scss';
 .sign-up {
   margin-bottom: 38px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 80px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 99px;
+  }
   &__title {
     margin-bottom: 2px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 22px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 13px;
     }
   }
   &__subtitle {
     margin-bottom: 32px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 53px;
+      text-align: center;
     }
-  }
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 80px;
-    margin-bottom: 0px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 63px;
+    }
   }
 }
 
@@ -24,6 +34,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 3px 0 2px;
+  }
   &__row {
     margin-bottom: 33px;
     @media screen and (min-width: $tablet) {
@@ -31,6 +49,9 @@
     }
     &_email {
       margin-bottom: 35px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+      }
     }
     &_btn {
       margin-top: 30px;
@@ -66,14 +87,6 @@
     height: 54px;
     padding: 0 0 3px 16px;
     box-sizing: border-box;
-    &_file {
-      position: absolute;
-      visibility: hidden;
-      overflow: hidden;
-      z-index: -1;
-      width: 0;
-      height: 0;
-    }
     @media screen and (min-width: $tablet) {
       &_big {
         width: 343px;
@@ -81,6 +94,22 @@
       &_small {
         width: 218px;
       }
+    }
+    @media screen and (min-width: $desktop) {
+      &_big {
+        width: 448px;
+      }
+      &_small {
+        width: 288px;
+      }
+    }
+    &_file {
+      position: absolute;
+      visibility: hidden;
+      overflow: hidden;
+      z-index: -1;
+      width: 0;
+      height: 0;
     }
   }
   &__label {
@@ -113,11 +142,6 @@
   }
   &__btn {
     @extend .sign-up__btn !optional;
-  }
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 

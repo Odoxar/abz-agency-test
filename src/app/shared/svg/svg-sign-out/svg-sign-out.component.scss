@@ -1,0 +1,10 @@
+@import '../../../../variables.scss';
+
+.sign-out__fill {
+  fill: #283593;
+  transition: $speed;
+}
+
+svg:hover .sign-out__fill {
+  fill: #2135bc;
+}

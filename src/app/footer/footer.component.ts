@@ -57,7 +57,7 @@ const contacts: ContactInfo[] = [
   },
   {
     value: "+38(095) 556 08 45",
-    key: "phone"
+    key: "mobile"
   }
 ];
 

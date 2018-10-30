@@ -3,28 +3,35 @@
   background-color: $secondary-color;
   color: $white-color;
   text-align: center;
+  position: relative;
   &_top {
     @extend %extend;
-    border-bottom: 1px solid #5873b7;
     padding: 30px 15px 27px;
     flex-direction: column;
+    position: relative;
     @media screen and (min-width: $tablet) {
       flex-direction: row;
       justify-content: space-between;
       padding: 28px 25px 31px 23px;
     }
+    @media screen and (min-width: $desktop) {
+      padding: 28px 3px 31px;
+    }
   }
   &_middle {
     @extend %extend;
-    padding: 28px 15px 0;
+    padding: 28px 15px 0 17px;
     @media screen and (min-width: $tablet) {
+      padding: 9px 23px 0 24px;
+    }
+    @media screen and (min-width: $desktop) {
       justify-content: space-between;
-      padding: 20px 23px 0 24px;
+      padding: 8px 2px 0;
     }
   }
   &_bottom {
     @extend %extend;
-    padding: 15px 15px 30px;
+    padding: 15px 15px 27px;
     flex-direction: column;
     align-items: center;
     @media screen and (min-width: $tablet) {
@@ -32,8 +39,12 @@
       padding: 11px 24px 37px;
       flex-direction: row-reverse;
     }
+    @media screen and (min-width: $desktop) {
+      padding: 24px 3px 16px;
+    }
   }
   &__logo {
+    margin-bottom: 14px;
     &_link {
       display: block;
       width: 134px;
@@ -67,7 +78,9 @@
     width: 100%;
     @media screen and (min-width: $tablet) {
       padding-top: 9px;
-      margin-bottom: 0;
+    }
+    @media screen and (min-width: $tablet) {
+      padding-top: 0;
     }
   }
   &__copyright {
@@ -76,6 +89,16 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.devider {
+  top: 225px;
+  @media screen and (min-width: $tablet) {
+    top: 85px;
   }
 }
 
@@ -93,11 +116,39 @@
   flex-direction: column;
   align-items: flex-start;
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.125em;
+    line-height: 1;
     margin-bottom: 16px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 26px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 4px;
+      line-height: 2.2;
+    }
+  }
+  &__icon {
+    display: none;
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
+  &_email {
+    background-image: url('../../assets/icons/mail.svg');
+  }
+  &_phone {
+    background-image: url('../../assets/icons/phone.svg');
+  }
+  &_mobile {
+    background-image: url('../../assets/icons/cellphone.svg');
   }
 }
 
@@ -109,6 +160,9 @@
   height: 120px;
   text-align: right;
   align-items: flex-end;
+  @media screen and (min-width: $desktop) {
+    width: 624px;
+  }
   &__link {
     display: inline;
     line-height: 1.875;

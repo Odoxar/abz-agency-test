@@ -1,0 +1,4 @@
+<mat-nav-list role="navigation" class="menu" (click)="sidenavClosed()">
+  <a mat-list-item class="menu__item" role="listitem" *ngFor="let item of menu">{{item.name}}</a>
+  <a mat-list-item *ngIf="q" class="menu__item" role="listitem">Sign Out</a>
+</mat-nav-list>

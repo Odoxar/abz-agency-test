@@ -6,6 +6,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 768px) {
+    padding: 115px 22px 120px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 133px 25px 158px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding: 133px 25px 141px;
+  }
   &__content {
     @media screen and (min-width: $tablet) {
       width: 55%;
@@ -17,15 +26,27 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 18px;
+    }
   }
   &__description {
     color: $white-color;
     margin-bottom: 38px;
     @media screen and (min-width: $tablet) {
-      width: 385px;
       padding-left: 3px;
       margin: 0 0 32px;
       line-height: 1.35;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 1.25em;
+      line-height: 1.3;
+      margin: 0 0 40px;
+      width: 430px;
+    }
+    @media screen and (min-width: $desktop-2k) {
+      width: 500px;
+      margin: 0 0 34px;
     }
   }
   &__sign-up_btn {
@@ -33,9 +54,6 @@
     @media screen and (min-width: $tablet) {
       margin: 0 2px 0;
     }
-  }
-  @media screen and (min-width: 768px) {
-    padding: 115px 22px 120px;
   }
 }
 

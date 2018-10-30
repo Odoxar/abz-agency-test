@@ -1,8 +1,36 @@
 @import "../../../variables.scss";
 .relationships {
   padding: 61px 15px 69px 16px;
+  @media screen and (min-width: $tablet) {
+    padding: 61px 15px 112px 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 57px 15px 120px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding: 57px 15px 122px;
+  }
+  &__wrap {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   &__item {
     margin-bottom: 29px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 41px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: column;
+      justify-content: start;
+      width: 294px;
+    }
+    @media screen and (min-width: $desktop-2k) {
+      width: 365px;
+    }
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -10,11 +38,9 @@
       @media screen and (min-width: $tablet) {
         width: 65%;
       }
-    }
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 41px;
+      @media screen and (min-width: $desktop) {
+        width: 100%;
+      }
     }
   }
   &__title {
@@ -27,14 +53,22 @@
   &__img {
     margin-bottom: 11px;
     height: 99px;
+    @media screen and (min-width: $tablet) {
+      margin: 0 37px 10px 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 111px;
+      margin: 0 auto 29px 2px;
+    }
     &_js {
       height: 105px;
       @media screen and (min-width: $tablet) {
         height: 102px;
       }
-    }
-    @media screen and (min-width: $tablet) {
-      margin: 0 37px 10px 10px;
+      @media screen and (min-width: $desktop) {
+        height: 114px;
+        margin: 0 auto 26px 1px;
+      }
     }
   }
   &__subtitle {
@@ -42,8 +76,13 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 7px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
   }
-  @media screen and (min-width: $tablet) {
-    padding: 61px 15px 112px 16px;
+  &__description {
+    @media screen and (min-width: $desktop) {
+      padding-left: 4px;
+    }
   }
 }

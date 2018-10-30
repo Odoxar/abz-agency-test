@@ -19,6 +19,10 @@
       background-position: 314px 23px;
       width: 343px;
     }
+    @media screen and (min-width: $desktop) {
+      background-position: 413px 23px;
+      width: 448px;
+    }
   }
   &__dropdown {
     position: absolute;

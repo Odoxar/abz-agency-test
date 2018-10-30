@@ -5,6 +5,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; //height: 1031px;
+  @media screen and (min-width: $tablet) {
+    padding: 115px 24px 120px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 135px 24px 130px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding: 135px 24px 96px;
+  }
   &__title {
     color: $white-color;
     line-height: 1.2;
@@ -13,12 +22,21 @@
       width: 475px;
       margin: 0 auto 37px;
     }
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0 auto 39px;
+    }
   }
   &__wrap {
     @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
       flex-direction: row-reverse;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0 3px;
     }
   }
   &__image {
@@ -29,10 +47,25 @@
       margin-top: 5px;
       height: 407px;
     }
+    @media screen and (min-width: $desktop) {
+      width: 429px;
+      height: 361px;
+      margin-top: 15px;
+    }
+    @media screen and (min-width: $desktop-2k) {
+      margin-top: 6px;
+      margin-right: 63px
+    }
   }
   &__content {
     @media screen and (min-width: $tablet) {
       margin-right: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 450px;
+    }
+    @media screen and (min-width: $desktop-2k) {
+      width: 530px;
     }
   }
   &__description {
@@ -41,8 +74,5 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-  }
-  @media screen and (min-width: $tablet) {
-    padding: 115px 24px 120px;
   }
 }

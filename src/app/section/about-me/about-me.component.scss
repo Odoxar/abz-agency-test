@@ -1,9 +1,18 @@
 @import "../../../variables.scss";
 .about-me {
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 68px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding-bottom: 19px;
+  }
   &__title {
     margin-bottom: 17px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 44px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 22px;
     }
     &_sub {
       padding: 0 15px;
@@ -12,6 +21,9 @@
         padding: 0;
         margin-bottom: 13px;
       }
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 8px;
+      }
     }
   }
   &__image {
@@ -19,6 +31,9 @@
     margin-bottom: 28px;
     @media screen and (min-width: $tablet) {
       margin: 0px 29px 0px 0;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 285px;
     }
   }
   &__content {
@@ -31,6 +46,12 @@
         flex-direction: row;
         align-items: flex-start;
       }
+      @media screen and (min-width: $desktop) {
+        padding: 0 3px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 24px;
     }
   }
   &__description {
@@ -42,10 +63,13 @@
       @media screen and (min-width: $tablet) {
         margin-bottom: 13px;
       }
+      @media screen and (min-width: $desktop-2k) {
+        margin-bottom: 6px;
+      }
     }
-  }
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 68px;
+    @media screen and (min-width: $desktop) {
+      padding-left: 2px;
+    }
   }
 }
 

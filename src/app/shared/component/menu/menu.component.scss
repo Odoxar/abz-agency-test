@@ -1,0 +1,25 @@
+@import '../../../../variables.scss';
+.menu {
+  margin-top: 18px;
+  padding-top: 0;
+  &__item {
+    font-family: $main-font;
+    transition: $speed ease-in;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-bottom: 4px;
+  }
+  @media screen and (min-width: $desktop-2k) {
+    padding-bottom: 0;
+  }
+}
+
+.mat-nav-list .mat-list-item {
+  height: 44px;
+  & .mat-list-item-content {
+    padding: 0 15px !important;
+  }
+}
